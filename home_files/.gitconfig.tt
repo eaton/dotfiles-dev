@@ -1,0 +1,32 @@
+[user]
+	name = Jeff Eaton
+	email = jeff@eaton.fyi
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+[alias]
+    today = log --all --author="`git config --get user.name`" --after=yesterday --oneline --reverse
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    st = status -s
+	smu = submodule update --init --recursive
+[github]
+	user = eaton
+[core]
+	quotepath = false
+	excludesfile = /Users/jeff/.gitignore_global
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+	keepBackup = true
+[merge]
+	tool = Kaleidoscope
