@@ -9,6 +9,7 @@ fi
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/Applications/ArangoDB3-CLI.app/Contents/Resources:$PATH"
 export PATH="~/bin:$PATH"
 
 # Homebrew recommended bits
@@ -124,3 +125,6 @@ PERL_MM_OPT="INSTALL_BASE=/Users/jeff/perl5"; export PERL_MM_OPT;
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Secretive compatibility
+export SSH_AUTH_SOCK=/Users/jeff/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
