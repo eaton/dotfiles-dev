@@ -9,7 +9,9 @@ fi
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH=${0:A:h}/bin:$PATH
 export PATH="~/bin:$PATH"
+
 
 # Homebrew recommended bits
 eval $(/opt/homebrew/bin/brew shellenv)
