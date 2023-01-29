@@ -126,5 +126,11 @@ PERL_MM_OPT="INSTALL_BASE=/Users/jeff/perl5"; export PERL_MM_OPT;
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+OP_BIOMETRIC_UNLOCK_ENABLED=true
+
 # Secretive compatibility
 export SSH_AUTH_SOCK=/Users/jeff/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
