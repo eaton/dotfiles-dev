@@ -30,3 +30,5 @@
 	keepBackup = true
 [merge]
 	tool = Kaleidoscope
+[init]
+	defaultBranch = main
