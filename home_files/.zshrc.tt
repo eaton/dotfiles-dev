@@ -130,6 +130,8 @@ PERL_MM_OPT="INSTALL_BASE=/Users/jeff/perl5"; export PERL_MM_OPT;
 
 OP_BIOMETRIC_UNLOCK_ENABLED=true
 
+eval "$(rbenv init - zsh)"
+
 # Secretive compatibility
 export SSH_AUTH_SOCK=/Users/jeff/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
